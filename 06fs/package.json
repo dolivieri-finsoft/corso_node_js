@@ -1,0 +1,11 @@
+{
+   "name": "filesystem",
+   "version": "1.0.6",
+   "description": "nuova descrizione del file package json, ex giro per fs",
+   "main": "index.js",
+   "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1"
+   },
+   "author": "Dino Olivieri",
+   "license": "ISC"
+}

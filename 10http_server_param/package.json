@@ -1,0 +1,11 @@
+{
+   "name": "http_server_param",
+   "version": "1.0.10",
+   "description": "parliamo di server http con parametri in get",
+   "main": "index.js",
+   "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1"
+   },
+   "author": "Dino Olivieri",
+   "license": "ISC"
+}

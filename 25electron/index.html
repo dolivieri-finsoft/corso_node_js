@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Hello World!</title>
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
+</head>
+<body style="background: white;">
+    <h1>TEST ELECTRON / Hello World!</h1>
+    <p>
+        We are using node <script>document.write(process.versions.node)</script>,
+        Chrome <script>document.write(process.versions.chrome)</script>,
+        and Electron <script>document.write(process.versions.electron)</script>.
+    </p>
+<script>
+    const fs = require('fs');
+
+    const root = fs.readdirSync('.');
+    console.log(root);
+
+    const myNotification = new Notification('Title', {
+        body: 'Notification from the Renderer process'
+    })
+
+    myNotification.onclick = () => {
+        console.log('Notification clicked')
+    }
+
+</script>
+</body>
+</html>

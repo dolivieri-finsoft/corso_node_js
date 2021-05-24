@@ -1,0 +1,11 @@
+{
+   "name": "http_server",
+   "version": "1.0.9",
+   "description": "parliamo di server http",
+   "main": "index.js",
+   "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1"
+   },
+   "author": "Dino Olivieri",
+   "license": "ISC"
+}

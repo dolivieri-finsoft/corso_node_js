@@ -1,0 +1,14 @@
+{
+   "name": "filesystem2",
+   "version": "1.0.7",
+   "description": "secondo giro su fs",
+   "main": "index.js",
+   "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1"
+   },
+   "author": "Dino Olivieri",
+   "license": "ISC",
+   "dependencies": {
+      "moment": "^2.29.1"
+   }
+}

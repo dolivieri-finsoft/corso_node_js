@@ -1,0 +1,11 @@
+{
+   "name": "udp_receiver_multicast",
+   "version": "1.0.17",
+   "description": "parliamo di udp/datagram - receiver da multicast",
+   "main": "index.js",
+   "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1"
+   },
+   "author": "Dino Olivieri",
+   "license": "ISC"
+}

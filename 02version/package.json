@@ -1,0 +1,12 @@
+{
+  "name": "version",
+  "version": "1.0.1",
+  "description": "come leggere la versione da package.json",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Dino Olivieri",
+  "license": "ISC",
+  "miecose": [1,2,3,4,5]
+}

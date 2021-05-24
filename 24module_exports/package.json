@@ -1,0 +1,11 @@
+{
+  "name": "module_exports",
+  "version": "1.0.24",
+  "description": "piccolo esempio di modulo scritto da noi con exports e require in codice",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Dino Olivieri",
+  "license": "ISC"
+}

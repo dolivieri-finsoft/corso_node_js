@@ -1,0 +1,53 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title>ws client</title>
+
+  <style>
+      .log{
+        border:1px solid black;
+        height: 20rem;
+      }
+  </style>
+</head>
+
+<body>
+
+  <p>A simple Websocket Client in a browser..</p>
+  <input id="text_to_send" type="text" value="">
+  <input id="button_send" type="button" value="send" onclick="sendMessage()">
+
+  <img id="remote_image" src="">
+
+  <h3>log</h3>
+  <div id="log_container" class="log">
+
+  </div>
+
+  <script>
+
+    // codice js del ws
+
+    var exampleSocket = new WebSocket("ws://127.0.0.1:60000", "protocolOne");
+
+    exampleSocket.onmessage = function (event) {
+        console.log(event.data);
+        if(event.data.indexOf('data:')>=0){
+          document.getElementById('remote_image').src = event.data;
+        } else{
+          document.getElementById('log_container').innerHTML += '[received] '+event.data+'<br>';
+        }
+    }
+
+    function sendMessage(){
+        let msg = document.getElementById('text_to_send').value;
+        exampleSocket.send(msg);
+        document.getElementById('log_container').innerHTML += '[sent] '+msg+'<br>';
+    }
+  </script>
+
+</body>
+
+</html>

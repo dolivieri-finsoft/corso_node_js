@@ -1,0 +1,11 @@
+{
+  "name": "config",
+  "version": "1.0.2",
+  "description": "come leggere da package.json e da un file di config",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Dino Olivieri",
+  "license": "ISC"
+}
